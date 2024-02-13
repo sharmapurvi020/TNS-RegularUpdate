@@ -1,0 +1,36 @@
+//code to print allsubstrings 
+package com.tnsif.strings;
+
+public class Substrings {
+	public static void printSubstrings(String str) {
+		for(int i = 0; i<str.length(); i++){
+            for(int j = i; j<str.length(); j++){
+                System.out.println(str.substring(i,j+1));
+            }
+        }
+	}
+
+	public static void main(String[] args) {
+		String str = "pqrs";
+		printSubstrings(str);
+
+	}
+
+}
+
+
+//another code snippet
+	public static void main(String[] args) {
+	
+		
+
+StringBuffer s1= new StringBuffer("ABC");
+s1.setCharAt(1, 'Z');
+System.out.println(s1);
+String s2="APY";
+String s3= new String("APY");
+System.out.println(s2.equals(s3));
+System.out.println(s2==s3);
+System.out.println(s2.compareTo(s3));
+
+	}
