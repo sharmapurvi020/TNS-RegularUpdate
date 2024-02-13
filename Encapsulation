@@ -1,0 +1,52 @@
+package com.tnsif.encapsulation;
+import java.util.Scanner;
+public class Vehicle {
+    private String make;
+    private String model;
+    private int year;
+
+    public Vehicle(String make, String model, int year) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+    }
+
+    public String getMake() {
+        return make;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public void setMake(String make) {
+        this.make = make;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    public static void main(String[] args) {
+        Vehicle myCar = new Vehicle("Toyota", "Corolla", 2018);
+        System.out.println("Make: " + myCar.getMake());
+        System.out.println("Model: " + myCar.getModel());
+        System.out.println("Year: " + myCar.getYear());
+
+        myCar.setMake("Honda");
+        myCar.setModel("Civic");
+        myCar.setYear(2017);
+
+        System.out.println("Updated Make: " + myCar.getMake());
+        System.out.println( myCar.getModel());
+        System.out.println( myCar.getYear());
+    }
+}
